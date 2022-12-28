@@ -1,7 +1,4 @@
-<?php 
-
-
-    session_start();
+<?php   
 
     include "inc/db.inc.php";
 
@@ -38,14 +35,6 @@
             <div class="box1">
                 <div class="box1-content">
                     <img src="images/profile-pic.png" id="profile-pic">
-                    <p class="session-name"><?php 
-
-                        if(isset($_SESSION['username'])){
-                            echo $_SESSION['username'];
-                        }else{
-                            echo "Administrator";
-                        }
-                    ?></p>
                     <ul>
                         <li class="active"><a href="index.php">Dashboard</a></li>
                         <li><a href="results.php">Results</a></li>
