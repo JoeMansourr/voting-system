@@ -2,11 +2,8 @@
 
     include "db.inc.php";
 
-
-
-  // Check if the form has been submitted
   if (isset($_POST['submit'])) {
-    // Get the email, password, and password confirmation from the form
+
     $username = mysqli_real_escape_string($conn, $_POST['username']);
     $password = mysqli_real_escape_string($conn, $_POST['password']);
 
